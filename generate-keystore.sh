@@ -27,7 +27,7 @@ function importIntoStore(){
 rm -f $KEYSTORE_FILE
 keytool -genkey \
     -deststoretype pkcs12 -keystore $KEYSTORE_FILE \
-    -dname "CN=HAWK-Local-Dev, OU=BP2S, O=BNP, L=Portugal, S=Lisbon, C=PT" \
+    -dname "CN=Local-Dev, OU=Cave, O=Cave, L=Portugal, S=Lisbon, C=PT" \
     -storepass $KEYSTORE_PASSWORD -keypass $KEYSTORE_PASSWORD
 
 # delete the default alias 'mykey'
